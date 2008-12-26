@@ -1,0 +1,113 @@
+!!!XML
+!!!
+%html{html_attrs}
+
+  %head
+    %title Merb Sandwich Shop
+    <meta http-equiv=”content-type” content=”text/html;charset=UTF-8” />
+    %link{:rel=>"stylesheet", :href=>"/stylesheets/master.css", :type=>"text/css", :media=>"screen", :charset=>"utf-8"}
+  
+  %body
+    #header
+      #logo
+        %h1 <a href="#">Merb on Rails </a>
+        %h2 beta
+    #menu-wrap
+      #menu
+        %ul
+          %li{:class=>"first"}
+            %a{:href=>"http://test.com", :accesskey=>"1"}
+              Home
+          %li 
+            %a{:href=>"http://test.com", :accesskey=>"2"}
+              About
+          %li            
+            %a{:href=>"http://test.com", :accesskey=>"3"}
+              Service
+          %li
+            %a{:href=>"http://test.com", :accesskey=>"4"}
+              Blog
+          %li
+            %a{:href=>"http://test.com", :accesskey=>"5"}
+              Contact us
+    %hr
+    #content
+      #app-layout-wrap
+        .post#app-layout
+        
+          =message[:notice] 
+          =catch_content :for_layout
+       
+      #sidebar
+        %ul
+          %li{:id=>"search"}
+            %h2 Search
+          %li{:id=>"calendar"}
+            %h2 Calendar
+          %li{:id=>"categories-1"}
+            %h2 categories
+            %ul
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Uncategorized"}
+                  Uncategorized(3) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Lorem Ipsum"}
+                  Lorem Ipsum(42) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Urna Congue Rutrum"}
+                  Urna Congue Rutrum(28) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Augue Praesent"}
+                  Augue Praesent(55) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Vivamus Fermentum"}
+                  Vivamus Fermentum(13)               
+        %div{:style=>"clear: both; height: 40px;"}
+                
+      #sidebar
+        %ul
+          %li{:id=>"search"}
+            %h2 Bookmarks
+            %ul
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Uncategorized"}
+                  Uncategorized(3) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Lorem Ipsum"}
+                  Lorem Ipsum(42) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Urna Congue Rutrum"}
+                  Urna Congue Rutrum(28) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Augue Praesent"}
+                  Augue Praesent(55) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Vivamus Fermentum"}
+                  Vivamus Fermentum(13)                 
+          %li{:id=>"calendar"}
+            %h2 Archives
+          %li{:id=>"categories-1"}
+            %h2 Tags
+            %ul
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Uncategorized"}
+                  Uncategorized(3) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Lorem Ipsum"}
+                  Lorem Ipsum(42) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Urna Congue Rutrum"}
+                  Urna Congue Rutrum(28) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Augue Praesent"}
+                  Augue Praesent(55) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Vivamus Fermentum"}
+                  Vivamus Fermentum(13)               
+        %div{:style=>"clear: both; height: 40px;"}
+      
+    %hr
+    
+    #footer
+      %p{:class=>"legal"}
+        &copy;2008 All Rights Reserved. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.

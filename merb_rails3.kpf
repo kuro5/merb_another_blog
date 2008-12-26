@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="5d0abb0f-b01e-41ad-9b73-89ef1febb1ff" kpf_version="4" name="merb_rails3.kpf">
+<preference-set idref="5d0abb0f-b01e-41ad-9b73-89ef1febb1ff">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>

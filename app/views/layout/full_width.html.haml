@@ -1,0 +1,41 @@
+!!!XML
+!!!
+%html{html_attrs}
+
+  %head
+    %title Merb Sandwich Shop
+    <meta http-equiv=”content-type” content=”text/html;charset=UTF-8” />
+    %link{:rel=>"stylesheet", :href=>"/stylesheets/master.css", :type=>"text/css", :media=>"screen", :charset=>"utf-8"}
+  
+  %body
+   
+    #toplinks
+      #toplinksnav
+        %p Are you looking for more open source designs? <a href="http://www.opendesigns.org/" title="OpenDesigns.org">Look Here</a>
+
+    #callout
+      #calloutblock
+        %img{:class=>"calloutfloat", :src=>"images/whats-new.jpg", :width=>"358", :height=>"104", :alt=>"What's New?"}
+        %h2 Taking Refuge In Simplicity.
+        %p I wanted to develop a theme that brings across a quiet, yet solid feel to it that could potentially be used for both commercial or personal web sites. I think i came pretty close to what I was looking for. 
+        %p <a href="#" title="link">Learn more&#8230;</a>
+        
+    #navbar
+      #navbarblock
+        %ul
+          %li <a href="index.html" title="Home" class="now">Home</a>
+          %li <a href="layout-two.html" title="Layout 2">Layout 2</a>
+          %li <a href="layout-three.html" title="Layout 3">Layout 3</a>
+          %li <a href="#" title="link">Portfolio</a>
+          %li <a href="#" title="link">Weblog</a>
+          %li <a href="#" title="link">Contact</a>
+
+    #textarea
+      =message[:notice] 
+      =catch_content :for_layout
+    
+    #footer
+      %p
+        2006 &copy; Your Company Name<br />
+        Design by <a href="http://www.raykdesign.net" title="Rayk Design">raykdesign</a> | Valid <a href="http://jigsaw.w3.org/css-validator/validator-uri.html" title="CSS">CSS</a>
+        and <a href="http://validator.w3.org/" title="XHTML">XHTML 1.0 Strict</a>
