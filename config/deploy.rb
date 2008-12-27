@@ -1,8 +1,12 @@
 set :application, "merbonrails.kicks-ass.org"
+set :domain, "67.207.135.70"
 set :user, 'deploy'
 set :use_sudo, false
 set :scm, :git
 set :runner, user
+set :ssh_options, { :forward_agent => true }
+default_run_options[:pty] = true
+set :port, 30003 #ssh port
 set :repository,  "ssh://deploy@67.207.135.70:30003/var/git/merbonrails.git"
 set :deploy_to, "/home/deploy/repos/#{application}"
 set :deploy_via, :remote_cache
