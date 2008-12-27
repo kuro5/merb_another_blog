@@ -1,42 +1,24 @@
-%h1 
-  %a{:href=>"http://blogspot.com"} 
-    How do I edit this page?
-%p You're seeing this page because you need to edit the following files:
-%ul
-  %li config/router.rb  <strong><em>(recommended)</em></strong>
-  %li app/views/exceptions/not_found.html.erb <strong><em>(recommended)</em></strong>
-  %li app/views/layout/application.html.erb <strong><em>(change this layout)</em></strong>
+%table{:border=>"0", :cellspacing=>"20"}
+  %tr
+    %td
+      %img{:src=>"images/where_is_rails_300_400.png"}
+    %td
+      %h1 
+        %a{:href=>"http://blogspot.com"} 
+          How do I edit this page?
+      %p You're seeing this page because you need to edit the following files:
+      %ul
+        %li config/router.rb  <strong><em>(recommended)</em></strong>
+        %li app/views/exceptions/not_found.html.erb <strong><em>(recommended)</em></strong>
+        %li app/views/layout/application.html.erb <strong><em>(change this layout)</em></strong>
 
-%h3 
-  %a{:href=>"http://blogspot.com"} 
-    Where can I find help?
-%p
-  If you have any questions or if you can't figure something out, please take a 
-  look at our <a href="http://merbivore.com/"> "project page"</a>, <br/>
-  feel free to come chat at irc.freenode.net, channel #merb, 
-  or post to <a href="http://groups.google.com/group/merb"> merb mailing list</a><br/>
-  on Google Groups.
+      %h3 
+        %a{:href=>"http://blogspot.com"} 
+          Where can I find help?
+      %p
+        If you have any questions or if you can't figure something out, please take a 
+        look at our <a href="http://merbivore.com/"> "project page"</a>, <br/>
+        feel free to come chat at irc.freenode.net, channel #merb, 
+        or post to <a href="http://groups.google.com/group/merb"> merb mailing list</a><br/>
+        on Google Groups.
 
-%h1 
-  %a{:href=>"http://blogspot.com"} 
-    Merb Sandwich Shop
-%h2 Serving Specialty Sandwiches Since 2006
-%h2 Hours
-%table{:border=>"1"}
-  %tr
-    %th Mon - Thur
-    %td 10:30 am - 5:30 pm
-  %tr
-    %th Fri - Sat
-    %td 10:30 am - 7:30 pm
-  %tr
-    %th Sun
-    %td 11:30 am - 3:30 pm
-%h2 Contact
-.vcard
-  .adr
-    .street-address
-      %span{:class=>"locality"}San Francisco
-      %span{:class=>"region"}CA
-      %span{:class=>"postal-code"}94107
-  .tel 916.555.1212

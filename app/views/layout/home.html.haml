@@ -10,8 +10,8 @@
   %body
     #header
       #logo
-        %h1 <a href="#">black berry </a>
-        %h2 By Free CSS Templates
+        %h1 <a href="#">Merb on Rails </a>
+        %h2 beta
     #menu-wrap
       #menu
         %ul
@@ -29,67 +29,86 @@
               Blog
           %li
             %a{:href=>"http://test.com", :accesskey=>"5"}
-              Contact
-
+              Contact us
     %hr
-    #latest-post-wrap
-      .post#latest-post
-        %p{:class=>"byline"} <span>Posted on December 15th, 2007 by <a href="#">Someone</a></span>
-        %h1{:class=>"title"} <a href="#">About This Free CSS Template</a>
-        .entry
-          %img{:src=>"/images/img06.jpg", :width=>"300", :height=>"200", :class=>"left"}
-          %p This is <strong>Black Berry </strong>, a free, fully standards-compliant CSS template designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
-          %p This free template is released under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attributions 2.5</a> license, so you’re pretty much free to do whatever you want with it  (even use it commercially) provided you keep the links in the footer  intact. Aside from that, have fun with it :) This design is also  available as a <a href="http://www.freewpthemes.net/preview/blackberry/">WordPress theme</a> at <a href="http://www.freewpthemes.net/">Free Wordpress Themes</a>.
-          %p Thanks to <a href="http://www.pdphoto.org/">PDPhoto.org</a> for the photo and <a href="http://www.famfamfam.com/">FAMFAMFAM</a> for the icons.
-          %p{:class=>"meta"}<a href="#" class="comments">14 Comments</a> &nbsp;&nbsp;&nbsp; <a href="#" class="permalink">Permalink</a>
-    
     #content
-      =message[:notice] 
-      =catch_content :for_layout
+      #app-layout-wrap
+        .post#app-layout
+        
+          =message[:notice] 
+          =catch_content :for_layout
+       
       #recent-posts
-        %h2 Recent Posts
+        %h2 Recent posts
         %ul
-          %li{:class=>"first}
-            Nulla enim eros, porttitor eu, tempus id, vari
-          %li
-            Nulla enim eros, porttitor eu, tempus id, vari
-          %li
-            Nulla enim eros, porttitor eu, tempus id, vari
-        %div{:style=>"clear: both; height: 40px;"} &nbsp;
-
-    #sidebar
-      %ul
-        %li{:id=>"search"}
-          %h2 Search
-        %li{:id=>"calendar"}
-          %h2 Calendar
-        %li{:id=>"categories-1"}
-          %h2 ategories
-          %ul
-            %li
-              %a{:href=>"http://test.com", :title=>"View all posts filed under Uncategorized"}
-                Uncategorized(3) 
-              
-            %li
-              %a{:href=>"http://test.com", :title=>"View all posts filed under Lorem Ipsum"}
-                Lorem Ipsum(42) 
-              
-            %li
-              %a{:href=>"http://test.com", :title=>"View all posts filed under Urna Congue Rutrum"}
-                Urna Congue Rutrum(28) 
-              
-            %li
-              %a{:href=>"http://test.com", :title=>"View all posts filed under Augue Praesent"}
-                Augue Praesent(55) 
-              
-            %li
-              %a{:href=>"http://test.com", :title=>"View all posts filed under Vivamus Fermentum"}
-                Vivamus Fermentum(13)
-               
-      %div{:style=>"clear: both; height: 40px;"}
+          %li{:id=>"search"}
+            %h2 Search
+          %li{:id=>"calendar"}
+            %h2 Calendar
+          %li{:id=>"categories-1"}
+            %h2 categories
+            %ul
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Uncategorized"}
+                  Uncategorized(3) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Lorem Ipsum"}
+                  Lorem Ipsum(42) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Urna Congue Rutrum"}
+                  Urna Congue Rutrum(28) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Augue Praesent"}
+                  Augue Praesent(55) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Vivamus Fermentum"}
+                  Vivamus Fermentum(13)               
+        %div{:style=>"clear: both; height: 40px;"}
+                
+      #sidebar
+        %ul
+          %li{:id=>"search"}
+            %h2 Bookmarks
+            %ul
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Uncategorized"}
+                  Uncategorized(3) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Lorem Ipsum"}
+                  Lorem Ipsum(42) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Urna Congue Rutrum"}
+                  Urna Congue Rutrum(28) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Augue Praesent"}
+                  Augue Praesent(55) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Vivamus Fermentum"}
+                  Vivamus Fermentum(13)                 
+          %li{:id=>"calendar"}
+            %h2 Archives
+          %li{:id=>"categories-1"}
+            %h2 Tags
+            %ul
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Uncategorized"}
+                  Uncategorized(3) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Lorem Ipsum"}
+                  Lorem Ipsum(42) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Urna Congue Rutrum"}
+                  Urna Congue Rutrum(28) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Augue Praesent"}
+                  Augue Praesent(55) 
+              %li
+                %a{:href=>"http://test.com", :title=>"View all posts filed under Vivamus Fermentum"}
+                  Vivamus Fermentum(13)               
+        %div{:style=>"clear: both; height: 40px;"}
       
     %hr
     
     #footer
       %p{:class=>"legal"}
-        2007 All Rights Reserved. Designed by 
+        &copy;2008 All Rights Reserved. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.

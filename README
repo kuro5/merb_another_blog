@@ -1,0 +1,7 @@
+(2008.12.26)
+현재 merb 버전 1.0.6.1, datamapper 0.9.8, haml 2.0.6 입니다.
+
+Nokogiri 젬이 webrat을 사용하는데 webrat의 현재 버전에 버그가 있으므로
+git clone git://github.com/brynary/webrat.git 로 젬을 설치해야 합니다.
+
+
